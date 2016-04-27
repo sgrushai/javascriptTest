@@ -16,10 +16,10 @@
 			$container = $('#containerBtns');
 
 		let btnIndex = 1;
-
-		$addBtn.click(() => {
+        $('.btn').on('click',clickHandler);
+        $addBtn.click(() => {
 			const $newBtn = $(`<button class="btn">button number ${btnIndex}</button>`);
-            $newBtn.click(clickHandler);
+            //$newBtn.click(clickHandler);
 			$('<div class="col-md-2"></div>').append($newBtn).appendTo($container);
 			btnIndex++;
 		});
@@ -67,7 +67,7 @@
             s = checkTime(s);
             document.getElementById('currentTime').innerHTML =
                 h + ":" + m + ":" + s;
-            var t = setTimeout(startTime, 500);
+            var t = setInterval(startTime, 500);
         }
         function checkTime(i) {
             if(!stopTime) {
