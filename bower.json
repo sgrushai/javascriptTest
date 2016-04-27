@@ -1,0 +1,29 @@
+{
+  "name": "javascript-test",
+  "description": "test for javascript reactjs and angularjs skills",
+  "main": "app.js",
+  "authors": [
+    "Igor Chernetsky"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "reactjs",
+    "angularjs"
+  ],
+  "homepage": "https://github.com/igor-chernetsky/javascript-test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "react": "^15.0.1",
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "babel": "*"
+  }
+}

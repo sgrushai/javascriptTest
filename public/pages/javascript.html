@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="javascripts/jQueryTest.js"></script>
+
+		<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="stylesheets/jsTest.css" rel="stylesheet" />
+		<link href="stylesheets/common.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">Javascript</a></li>
+						<li><a href="/angular">AngularJS</a></li>
+						<li><a href="/react">ReactJS</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<h1>Javascript/jQuery tests</h1>
+			<hr/>
+			<h2>Common handler</h2>
+			<div class="alert alert-success">
+				The following blue button adds new button to a container, need to add handler that is used for the test button for all new buttons
+				<div class="alert alert-info">HINT: Try not to add separate handler for each button</div>
+			</div>
+
+				<button id="addBtn" class="btn btn-primary">Add New Button</button>
+				<button id="testBtn" class="btn">Test Button</button>
+
+			<div id="messageDiv" style="display: none" class="alert alert-success"></div>
+			<div id="containerBtns" class="row">
+				<div class="col-md-2">
+					<button class="btn">button number 0</button>
+				</div>
+			</div>
+
+			<hr/>
+			<div class="alert alert-success">
+				The button below should open a modal window 500px X 300px the modal window should have a close button and real time<br/>
+				The time label should be shown in format hh:mm:ss aud be updated every second, updating stops when the dialog is closed.
+				<div class="alert alert-warning">WARNING: Do not use bootstrap for modal dialog, css should be added to jsTest.css file</div>
+			</div>
+			<button class="btn" id="timeBtn">Show time</button>
+			<div class="custom-dialog">
+
+			</div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">x</span>
+                    <p id="currentTime"></p>
+                </div>
+
+            </div>
+		</div>
+	</body>
+</html>
